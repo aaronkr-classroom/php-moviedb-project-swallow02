@@ -12,7 +12,7 @@ $sql="DELETE FORM movie WHERE title='".$title."'";
 $result=mysqli_query($conn,$sql);
 
 if($result){
-    echo"<script>alert('".$title."정보 삭제 되었습니다');</script>"
+    echo"<script>alert('".$title."정보 삭제 되었습니다');</script>";
 }
 else{
     $err_msg=mysqli_error($conn);

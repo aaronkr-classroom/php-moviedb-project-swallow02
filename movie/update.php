@@ -73,8 +73,8 @@ if($result){
             </div>
             <div class="ui-body">
             <fieldset class="ui-grid-a">
-                <div class="ui-block-a"><input type="reset2" value="취소"/></div>
-                <div class="ui-block-b"><input type="submit2" value="수정"/></div>
+                <div class="ui-block-a"><input type="reset" id="cancel2" value="취소"/></div>
+                <div class="ui-block-b"><input type="submit" id="submit2" value="수정"/></div>
             </fieldset>
           </div>
         </form>

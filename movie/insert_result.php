@@ -3,13 +3,13 @@
 //movieDB데이터베이 연결
 $conn=mysqli_connect("localhost","movie_user","1234","movieDB")or die("movieDB접속 실패!");
 
-$title =$_POST["titlte1"];
+$title =$_POST["title1"];
 $genre=$_POST["movieGenre1"];
 $myear=$_POST["movieYear1"];
 $price=$_POST["moviePrice1"];
 $file = $_FILES['upfile'];
 
-$upload_dir="./phto/";
+$upload_dir="./photo/";
 $pathfile =$upload_dir.basename($file['name']);
 if(isset($_FILES['upfile'])&&$_FILES['upfile']['name']!=""){
     if(move_uploaded_file($file['tmp_name'],$pathfile)){
