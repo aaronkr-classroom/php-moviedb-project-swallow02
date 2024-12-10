@@ -65,11 +65,11 @@ if($result){
                     <option value="판타지">판타지</option>
                 </select>
                 <labe for="movieTitle2">영화명:</label>
-                <input type="text" name="movieTitle2" value=<?php echo$title?>data-mini="true"/>
+                <input type="text" name="movieTitle2" value=<?php echo$title?> data-mini="true"/>
                 <labe for="movieYear2">상영날짜:</label>
-                <input type="text" name="movieYear2" value=<?php echo$myear?>data-mini="true"/>
+                <input type="text" name="movieYear2" value=<?php echo$myear?> data-mini="true"/>
                 <labe for="moviePrice">관람료:</label>
-                <input type="text" name="moviePrice2" value=<?php echo$price?>data-mini="true"/>
+                <input type="text" name="moviePrice2" value=<?php echo$price?> data-mini="true"/>
             </div>
             <div class="ui-body">
             <fieldset class="ui-grid-a">

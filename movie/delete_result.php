@@ -4,7 +4,7 @@ $conn=mysqli_connect("localhost","movie_user","1234","movieDB")or die("movieDBì 
 $title=$_POST["movieTitle3"];
 
 $sql="SELECT photo FROM movie WHERE title='".$title."'";
-$result=mysqli_query($conn,$slq);
+$result=mysqli_query($conn,$sql);
 $row=mysqli_fetch_array($result);
 unlink($row["photo"]);
 
