@@ -18,3 +18,7 @@ CREATE TABLE IF NOT EXISTS movie(
     photo VARCHAR(50) NULL
 );
 --영화 정보 3개 입력
+INSERT INTO movie VALUES
+('1','매트릭스','판타지','2000-02-02','5000','./photo/matrix.png'),
+('2','트루먼쇼','코미디','2002-02-02','5000','./photo/show.png'),
+('3','타이타닉','로맨스','2002-02-02','5000','./photo/titanic.png');

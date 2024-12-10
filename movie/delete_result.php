@@ -8,7 +8,7 @@ $result=mysqli_query($conn,$sql);
 $row=mysqli_fetch_array($result);
 unlink($row["photo"]);
 
-$sql="DELETE FORM movie WHERE title='".$title."'";
+$sql="DELETE FROM movie WHERE title='".$title."'";
 $result=mysqli_query($conn,$sql);
 
 if($result){

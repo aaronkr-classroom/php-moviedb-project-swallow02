@@ -7,7 +7,7 @@ if(isset($_POST['movieTitle2'])&&isset($_POST['movieGenre2'])&& isset($_POST['mo
     $myear=$_POST["movieYear2"];
     $price=$_POST["moviePrice2"];
 }
-$sql="UPDATE movie SET title='".$title."',genre='".$genre."',myear='".$myear."',price=".$price."WHERE title='".$title."'";
+$sql="UPDATE movie SET title='".$title."',genre='".$genre."',myear='".$myear."',price='".$price."'WHERE title='".$title."';";
 $result=mysqli_query($conn,$sql);
 
 if($result){
