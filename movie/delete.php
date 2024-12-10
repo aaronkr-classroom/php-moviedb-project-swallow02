@@ -54,7 +54,7 @@ if($result){
     </div>
     <div data-role="content">
         <h3>영화 내용 삭제</h3>
-        <form name="form3-1" mthod="post" action="delete_result.php" data-ajax="false">
+        <form name="form3-1" method="post" action="delete_result.php" data-ajax="false">
             <div class="ui-body ui-body-a">
                 <label for="movieGenre3" class="select">장르:</label>
                 <select name="movieGenre3" data-native-menu="false" data-mini="true" data-inline="true">

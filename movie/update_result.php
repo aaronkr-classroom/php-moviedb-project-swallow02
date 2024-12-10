@@ -1,13 +1,13 @@
 <?php
 $conn=mysqli_connect("localhost","movie_user","1234","movieDB")or die("movieDB접속 실패!");
 
-if(isset($_POST['movieTitle2'])&&isset($_POST['movieGenre2'])&& isset($_POST['movieYear'])&&isset($_POST['moviePrice2'])){
+if(isset($_POST['movieTitle2'])&&isset($_POST['movieGenre2'])&& isset($_POST['movieYear2'])&&isset($_POST['moviePrice2'])){
     $title=$_POST["movieTitle2"];
     $genre=$_POST["movieGenre2"];
     $myear=$_POST["movieYear2"];
     $price=$_POST["moviePrice2"];
 }
-$sql="UPDATE movie SET title='".$title."',genre='".$genre."',myear='".$myear."',price='".$price."'WHERE title='".$title."'";
+$sql="UPDATE movie SET title='".$title."',genre='".$genre."',myear='".$myear."',price=".$price."WHERE title='".$title."'";
 $result=mysqli_query($conn,$sql);
 
 if($result){
