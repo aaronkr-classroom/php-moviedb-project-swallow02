@@ -3,7 +3,7 @@ $conn=mysqli_connect("localhost","movie_user","1234","movieDB")or die("movieDB�
 
 $title=$_POST["smovieTitle2"];
 
-$sql="SELECT*FROM MOVIE WHERE title='".$title."'";
+$sql="SELECT * FROM MOVIE WHERE title='".$title."'";
 $result=mysqli_query($conn,$sql);
 
 if($result){
@@ -54,15 +54,15 @@ if($result){
     </div>
     <div data-role="content">
         <h3>영화 내용 수정</h3>
-        <form name="form2" mthod="post" action="update_result.php" data-ajax="false">
+        <form name="form2" method="post" action="update_result.php" data-ajax="false">
             <div class="ui-body ui-body-a">
                 <label for="movieGenre2" class="select">장르:</label>
                 <select name="movieGenre2" data-native-menu="false" data-mini="true" data-inline="true">
                     <option value="<?php echo$genre?>"><?php echo $genre?></option>
-                    <option value=:"액션">액션</option>
-                    <option value=:"로맨스">로맨스</option>
-                    <option value=:"코미디">코미디</option>
-                    <option value=:"판타지">판타지</option>
+                    <option value="액션">액션</option>
+                    <option value="로맨스">로맨스</option>
+                    <option value="코미디">코미디</option>
+                    <option value="판타지">판타지</option>
                 </select>
                 <labe for="movieTitle2">영화명:</label>
                 <input type="text" name="movieTitle2" value=<?php echo$title?>data-mini="true"/>

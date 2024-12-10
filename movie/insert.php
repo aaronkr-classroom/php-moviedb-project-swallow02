@@ -46,7 +46,7 @@
             <label>관람료:</label>
             <input type="text" name="moviePrice1" value="" data-mini="true">
             <label>영화포스터:</label>
-            <input type="text" name="upfile" value="" data-mini="true">
+            <input type="file" name="upfile" value="" data-mini="true">
           </div>
           <div class="ui-body">
             <fieldset class="ui-grid-a">

@@ -10,7 +10,7 @@ $price=$_POST["moviePrice1"];
 $file = $_FILES['upfile'];
 
 $upload_dir="./phto/";
-$pathfile =$uploda_dir.basename($file['name']);
+$pathfile =$upload_dir.basename($file['name']);
 if(isset($_FILES['upfile'])&&$_FILES['upfile']['name']!=""){
     if(move_uploaded_file($file['tmp_name'],$pathfile)){
         $sql="INSERT INTO MOVIE(id,title,genre,myear,price,photo)
