@@ -29,5 +29,5 @@ if(isset($_FILES['upfile'])&&$_FILES['upfile']['name']!=""){
 
 }
 mysqli_close($conn);
-echo'<script>location.replace("main.php");</script>';
+echo'<script>location.replace("index.php");</script>';
 ?>

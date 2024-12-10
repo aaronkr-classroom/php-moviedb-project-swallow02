@@ -9,7 +9,7 @@ $result=mysqli_query($conn,$sql);
 if($result){
     $count=mysqli_num_rows($result);
     if($count==0){
-        echo"<script>alert('해당 정보가 없습니다.');locataion.replace('main.php');</script>";
+        echo"<script>alert('해당 정보가 없습니다.');locataion.replace('index.php');</script>";
     }
 }
     else{
@@ -42,7 +42,7 @@ if($result){
     <div data-role="header" data-position="fixed" data-theme="b">
         <a href="#" data-icon="back" data-rel="back">Back</a>
         <h1>영화 정보 삭제</h1>
-        <a href="main.php" data-icon="home" data-iconpos="notext">Home</a>
+        <a href="index.php" data-icon="home" data-iconpos="notext">Home</a>
         <div data-role="navbar">
             <ul>
                 <li><a href="insert.php">입력</a></li>

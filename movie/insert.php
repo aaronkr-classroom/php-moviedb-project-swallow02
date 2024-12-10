@@ -15,7 +15,7 @@
     <div data-role="header" data-position="fixed" data-theme="b">
         <a href="#" data-icon="back" data-rel="back">Back</a>
         <h1>영화 정보 입력</h1>
-        <a href="main.php" data-icon="home" data-iconpos="notext">Home</a>
+        <a href="index.php" data-icon="home" data-iconpos="notext">Home</a>
         <div data-role="navbar">
             <ul>
                 <li><a href="insert.php">입력</a></li>
