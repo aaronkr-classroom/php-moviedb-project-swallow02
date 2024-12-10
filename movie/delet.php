@@ -1,7 +1,7 @@
 <?php
 $conn=mysqli_connect("localhost","movie_user","1234","movieDB")or die("movieDB접속 실패!");
 
-$title=$_POST["smovieTitle2"];
+$title=$_POST["smovieTitle3"];
 
 $sql="SELECT*FROM MOVIE WHERE title='".$title."'";
 $result=mysqli_query($conn,$sql);
@@ -37,11 +37,11 @@ if($result){
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-    <!--영화정보 갱신 화면-->
-  <div data-role="page" id="page2">
+    <!--영화정보 삭제 화면-->
+  <div data-role="page" id="page3">
     <div data-role="header" data-position="fixed" data-theme="b">
         <a href="#" data-icon="back" data-rel="back">Back</a>
-        <h1>영화 정보 수정</h1>
+        <h1>영화 정보 삭제</h1>
         <a href="main.php" data-icon="home" data-iconpos="notext">Home</a>
         <div data-role="navbar">
             <ul>
@@ -53,28 +53,28 @@ if($result){
         </div>
     </div>
     <div data-role="content">
-        <h3>영화 내용 수정</h3>
-        <form name="form2" mthod="post" action="update_result.php" data-ajax="false">
+        <h3>영화 내용 삭제</h3>
+        <form name="form3-1" mthod="post" action="delete_result.php" data-ajax="false">
             <div class="ui-body ui-body-a">
-                <label for="movieGenre2" class="select">장르:</label>
-                <select name="movieGenre2" data-native-menu="false" data-mini="true" data-inline="true">
+                <label for="movieGenre3" class="select">장르:</label>
+                <select name="movieGenre3" data-native-menu="false" data-mini="true" data-inline="true">
                     <option value="<?php echo$genre?>"><?php echo $genre?></option>
                     <option value=:"액션">액션</option>
                     <option value=:"로맨스">로맨스</option>
                     <option value=:"코미디">코미디</option>
                     <option value=:"판타지">판타지</option>
                 </select>
-                <labe for="movieTitle2">영화명:</label>
-                <input type="text" name="movieTitle2" value=<?php echo$title?>data-mini="true"/>
-                <labe for="movieYear2">상영날짜:</label>
-                <input type="text" name="movieYear2" value=<?php echo$myear?>data-mini="true"/>
-                <labe for="moviePrice">관람료:</label>
-                <input type="text" name="moviePrice2" value=<?php echo$price?>data-mini="true"/>
+                <labe for="movieTitle3>영화명:</label>
+                <input type="text" name="movieTitle3" value=<?php echo$title?>data-mini="true"/>
+                <labe for="movieYear3">상영날짜:</label>
+                <input type="text" name="movieYear3" value=<?php echo$myear?>data-mini="true"/>
+                <labe for="moviePrice3">관람료:</label>
+                <input type="text" name="moviePrice3" value=<?php echo$price?>data-mini="true"/>
             </div>
             <div class="ui-body">
             <fieldset class="ui-grid-a">
-                <div class="ui-block-a"><input type="reset2" value="취소"/></div>
-                <div class="ui-block-b"><input type="submit2" value="수정"/></div>
+                <div class="ui-block-a"><input type="reset" value="취소"/></div>
+                <div class="ui-block-b"><input type="submit" value="삭제"/></div>
             </fieldset>
           </div>
         </form>
