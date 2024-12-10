@@ -2,13 +2,13 @@
 
 이 Codespace는 Microsoft PHP Codespace 프로젝트에서 포크되었습니다.
 
-1. MongoDB Atlas 실습
+- MongoDB Atlas 실습
   - MongoDB Atlas에 연결
   - `moviedb` 컬렉션에 테이블의 영화 데이터를 추가합니다(`.js` Playground 파일 사용)
-2. PHP 프로젝트 개발
+- PHP 프로젝트 개발
   - PHP로 책의 앱을 `/`또는 `webapp` 폴더에서 개발합니다(MySQL 예제 사용)
   - Codespace에서 앱을 실행하여 작동하는지 확인합니다.
-3. 컴퓨터에서 실행
+- 컴퓨터에서 실행
   - GitHub Desktop(또는 `.zip` 폴더)을 사용하여 프로젝트를 컴퓨터에 다운로드하여 개발을 계속합니다.
   - 로컬 컴퓨터에서 MySQL의 Workbench를 실행합니다.
   - 동일한 영화 데이터를 `moviedb_mysl` 테이블에 추가합니다.
